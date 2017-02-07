@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Side</title>
+<script src="jquery-3.1.1.js"></script>
+<script src="index.js"></script>
+<script type="text/javascript">
+	
+</script>
+<link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+	<!-- login menu -->
+	<div class="container" id="maincontainer">
+		<Div>
+			<H1 id="test">Login side</H1>
+			<H2>Gruppe 2</H2>
+		</Div>
+		<form action="useradmin.html" method="get">
+			<div>
+				<label for="username">Brugernavn</label> <input id="username"
+					type="text" name="username">
+			</div>
+			<div>
+				<label for="password">Kodeord</label> <input id="password"
+					type="password" name="password">
+			</div>
+			<input type="submit" value="Send data" id="loginsubmit" onclick="login();">
+		</form>
+		<div class="img-container">
+			<img alt="" src="img/DTU-3.jpg" style="width: 88px; height: 137px;">
+		</div>
+	</div>
+
+	<!-- bruger menu -->
+	<div id="brugermenucontainer" style="display:none">
+		<B>Menu</B>
+		<nav>
+			<a href="useradmin.html">Brugeradministration</a>&nbsp;| <a
+				href="index.html">logud</a>
+		</nav>
+		<H1>Bruger administration</H1>
+		<div id="test">
+			<table>
+				<thead>
+					<tr>
+						<td colspan="4"></td>
+						<td colspan="4" align="center">Adresse</td>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>BrugerID</td>
+						<td>BrugerNavn</td>
+						<td>Rolle</td>
+						<td>Fornavn</td>
+						<td>Vej</td>
+						<td>Nummer</td>
+						<td>Postnummer</td>
+						<td>By</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Brian</td>
+						<td>Administrator</td>
+						<td>Brian Bjørn</td>
+						<td>Anker Engelundsvej</td>
+						<td>1</td>
+						<td>2800</td>
+						<td><A href="useredit.html">Rediger bruger</A>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>aa</td>
+						<td>Bruger</td>
+						<td>Anders</td>
+						<td>Paradisæblevej</td>
+						<td>13</td>
+						<td>1000</td>
+						<td><A href="useredit.html">Rediger bruger</A>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>ra</td>
+						<td>Bruger</td>
+						<td>Rip</td>
+						<td>Paradisæblevej</td>
+						<td>13</td>
+						<td>1000</td>
+						<td><A href="useredit.html">Rediger bruger</A>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div id="testcontainer">
+		
+	</div>
+
+</body>
+</html>
