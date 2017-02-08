@@ -1,13 +1,11 @@
 /**
  * 
  */
-
+//Alternate version of attaching clickhandler
 $(document).ready(function() {
 	$('#loginsubmit').click(function(){
-		alert("clicked!");
-
+		//login(); 
 	});
-	//$('#maincontainer').html("New content");
 });
 
 function login(){
