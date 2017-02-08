@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hello JQuery</title>
+<script src="jquery-3.1.1.js"></script>
+<script>
+function hello(){
+	var name = $('#name').val();
+	alert("Hello " + name);
+}
+</script>
+</head>
+<body>
+<input type="text" id="name">Skriv dit navn
+<input type="button" onclick="hello();" value="Hello">
+</body>
+</html>
