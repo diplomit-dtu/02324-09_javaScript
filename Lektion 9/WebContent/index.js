@@ -12,7 +12,7 @@ function login(){
 	event.preventDefault();
 	var password = $('#password').val();
 	var username = $('#username').val();
-	alert("username/password" + password + username);
+	//alert("username/password" + password + username);
 	if (password == 'test' && username == 'test'){
 		$('#maincontainer').hide();
 		$('#brugermenucontainer').show();	
