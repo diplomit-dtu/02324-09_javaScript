@@ -26,8 +26,10 @@ function login(){
 function newUserShow(){
 	$('#newuser').show();
 	$('#brugermenucontainer').hide();
+	event.preventDefault();
 }
 function showBrugerAdmin(){
 	$('#newuser').hide();
 	$('#brugermenucontainer').show();
+	event.preventDefault();
 }
