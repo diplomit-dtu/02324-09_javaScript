@@ -3,9 +3,9 @@
  */
 //Alternate version of attaching clickhandler
 $(document).ready(function() {
-	$('#loginsubmit').click(function(){
-		//login(); 
-	});
+//	$('#loginsubmit').click(function(){
+//		login(); 
+//	});
 });
 
 function login(){
@@ -16,11 +16,18 @@ function login(){
 	if (password == 'test' && username == 'test'){
 		$('#maincontainer').hide();
 		$('#brugermenucontainer').show();	
-		$('#testcontainer').load('http://budtz.eu');
 	} else {
 		alert("Wrong username/password");
 		$('#loginsubmit').css("background","red");
 	}
 
 
+}
+function newUserShow(){
+	$('#newuser').show();
+	$('#brugermenucontainer').hide();
+}
+function showBrugerAdmin(){
+	$('#newuser').hide();
+	$('#brugermenucontainer').show();
 }

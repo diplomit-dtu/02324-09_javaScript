@@ -26,7 +26,8 @@
 				<label for="password">Kodeord</label> <input id="password"
 					type="password" name="password">
 			</div>
-			<input type="submit" value="Send data" id="loginsubmit" onclick="login();">
+			<input type="submit" value="Send data" id="loginsubmit"
+				onclick="login();">
 		</form>
 		<div class="img-container">
 			<img alt="" src="img/DTU-3.jpg" style="width: 88px; height: 137px;">
@@ -34,13 +35,15 @@
 	</div>
 
 	<!-- bruger menu -->
-	<div id="brugermenucontainer" style="display:none">
+	<div id="brugermenucontainer" style="display: none">
 		<B>Menu</B>
 		<nav>
-			<a href="useradmin.html">Brugeradministration</a>&nbsp;| <a
-				href="index.html">logud</a>
+			<a>Brugeradministration</a>&nbsp;| <a href="index.html">logud</a>
 		</nav>
 		<H1>Bruger administration</H1>
+		<div>
+			<a onclick="newUserShow();">Opret ny bruger</a>
+		</div>
 		<div id="test">
 			<table>
 				<thead>
@@ -69,7 +72,7 @@
 						<td>Anker Engelundsvej</td>
 						<td>1</td>
 						<td>2800</td>
-						<td><A href="useredit.html">Rediger bruger</A>
+						<td><a>Slet bruger</a></td>
 					</tr>
 					<tr>
 						<td>2</td>
@@ -79,7 +82,7 @@
 						<td>Paradisæblevej</td>
 						<td>13</td>
 						<td>1000</td>
-						<td><A href="useredit.html">Rediger bruger</A>
+						<td><a>Slet bruger</a></td>
 					</tr>
 					<tr>
 						<td>3</td>
@@ -89,14 +92,41 @@
 						<td>Paradisæblevej</td>
 						<td>13</td>
 						<td>1000</td>
-						<td><A href="useredit.html">Rediger bruger</A>
+						<td><a>Slet bruger</a></td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
 	</div>
-	<div id="testcontainer">
-		
+	<div id="newuser" style="display: none">
+		<DIV class="container">
+			<h1>Opret bruger</h1>
+			<form action="#">
+				<div>
+					<label for="brugerId">Bruger Id: </label> 3
+				</div>
+				<div>
+					<label for="brugernavn">Brugernavn</label><input type="text">
+				</div>
+				<div>
+					<label for="fornavn">Fornavn</label><input type="text">
+				</div>
+				<div>
+					<label for="efternavn">Efternavn</label><input type="text">
+				</div>
+				<div>
+					<label for="rolle">Rolle</label><input type="checkbox"
+						value="Admin">Administrator<input type="checkbox"
+						value="Admin">Bruger
+				</div>
+				<div>
+					<label for="active">Aktiv</label><input type="radio" value="yes"
+						checked="checked" name="active">Yes<input type="radio"
+						value="no" name="active">No
+				</div>
+				<input onclick="showBrugerAdmin();" type="submit" value="Gem ændringer">
+			</form>
+		</DIV>
 	</div>
 
 </body>
