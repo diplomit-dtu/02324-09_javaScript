@@ -1,1 +1,11 @@
-{"plugins":{"guess-types":{},"outline":{}},"ecmaVersion":5,"ide":{}}
+{
+  "plugins": {
+    "guess-types": {
+      
+    },
+    "outline": {
+      
+    }
+  },
+  "ecmaVersion": 5
+}
